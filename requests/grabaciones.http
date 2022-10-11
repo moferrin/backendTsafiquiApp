@@ -1,8 +1,13 @@
 
 GET http://localhost:3000/grabacion
-###
 
+###
 POST http://localhost:3000/grabacion
 
 ###
-PUT http://localhost:3000/grabacion
+PUT http://localhost:3000/grabacion/6345de2a11b00fd8f3b79d4a
+
+Content-Type: application/json
+{
+    "lenguaGrab":"cdscdss",
+}

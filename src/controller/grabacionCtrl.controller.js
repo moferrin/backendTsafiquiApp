@@ -22,7 +22,8 @@ export const crearGrabacion = async (req, res) => {
 }
 
 export const actualizarGrabacion = async (req, res) => {
-    const id = req.params;
-    const grabacionActu = await Grabacion.findByIdAndUpdate(id,{$set: req.body}, {new:true})
+    const {id} = req.params;
+    console.log(req.body); 
+    const grabacionActu = await Grabacion.findByIdAndUpdate(id,{$set: req.body});
     res.send(grabacionActu);
 }

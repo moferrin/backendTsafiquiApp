@@ -8,7 +8,7 @@ router.get('/', grabacionCtrl.todasGrabaciones);
 
 router.post('/', grabacionCtrl.crearGrabacion);
 
-router.put('/', grabacionCtrl.actualizarGrabacion);
+router.put('/:id', grabacionCtrl.actualizarGrabacion);
 
 export default router;
 
