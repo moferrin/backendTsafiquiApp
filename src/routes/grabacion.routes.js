@@ -1,19 +1,14 @@
 
 import { Router } from "express";
+import * as grabacionCtrl from '../controller/grabacionCtrl.controller'
 
 const router = Router();
 
-router.get('/', (req, res) =>{
-    res.send('hola get');
-});
+router.get('/', grabacionCtrl.todasGrabaciones);
 
-router.post('/', (req, res) =>{
-    res.send('hola post');
-});
+router.post('/', grabacionCtrl.crearGrabacion);
 
-router.put('/', (req, res) =>{
-    res.send('hola post');
-});
+router.put('/', grabacionCtrl.actualizarGrabacion);
 
 export default router;
 

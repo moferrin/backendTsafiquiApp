@@ -3,3 +3,6 @@ GET http://localhost:3000/grabacion
 ###
 
 POST http://localhost:3000/grabacion
+
+###
+PUT http://localhost:3000/grabacion
