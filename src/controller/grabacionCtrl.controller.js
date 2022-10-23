@@ -6,19 +6,11 @@ export const todasGrabaciones = async (req, res) => {
 }
 
 export const crearGrabacion = async (req, res) => {
-    const grabacion = new Grabacion({
-        lenguaGrab: req.body.lenguaGrab,
-        lenguaMadre: req.body.lenguaMadre,
-        lenguaSecundaria: req.body.lenguaSecundaria,
-        ciudad: req.body.ciudad,
-        nota: req.body.nota,
-        apellidoNombre: req.body.apellidoNombre,
-        edad: req.body.edad,
-        genero: req.body.genero,
-    })
-
-    const grabacionGuard = await grabacion.save();
-    res.send(grabacionGuard);
+    console.log(req.body)
+    const grabacion = new Grabacion(req.body)
+    //console.log(grabacion);
+    await grabacion.save();
+    res.json({ status: "persona_enc_c" });
 }
 
 export const actualizarGrabacion = async (req, res) => {

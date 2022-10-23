@@ -4,6 +4,18 @@ GET http://localhost:3000/grabacion
 ###
 POST http://localhost:3000/grabacion
 
+Content-Type: application/json
+{
+  lenguaGrab: 'a651faf1-3389-4529-8a15-536439466d3e',
+  ciudad: 'a651faf1-3389-4529-8a15-536439466d3e',
+  genero: 'a651faf1-3389-4529-8a15-536439466d3e',
+  lenguaSecundaria: 'a651faf1-3389-4529-8a15-536439466d3e',
+  lenguaMadre: 'a651faf1-3389-4529-8a15-536439466d3e',
+  apellidoNombre: 'a651faf1-3389-4529-8a15-536439466d3e',
+  nota: 'a651faf1-3389-4529-8a15-536439466d3e',
+  edad: 'a651faf1-3389-4529-8a15-536439466d3e'
+}
+
 ###
 PUT http://localhost:3000/grabacion/6345de2a11b00fd8f3b79d4a
 

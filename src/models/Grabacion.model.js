@@ -1,14 +1,14 @@
 import { Schema, model } from 'mongoose';
 
 const grabacionSchema = new Schema({
-    lenguaGrab: {String},
-    lenguaMadre: {String},
-    lenguaSecundaria: {String},
-    ciudad: {String},
-    nota: {String},
-    apellidoNombre: {String},
-    edad: {String},
-    genero: {String},
+    lenguaGrab: {type: String, required: true},
+    lenguaMadre: {type: String, required: true},
+    lenguaSecundaria: {type: String, required: true},
+    ciudad: {type: String, required: true},
+    nota: {type: String, required: true},
+    apellidoNombre: {type: String, required: true},
+    edad: {type: String, required: true},
+    genero: {type: String, required: true},
 });
 
 export default model('grabacion',grabacionSchema);
